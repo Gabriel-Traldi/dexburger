@@ -1,0 +1,11 @@
+<div>
+  <app-burger [ingredients]="burger.ingredients"></app-burger>
+  <app-build-controls
+    (ingredientAdded)="addIngredient($event)"
+    (ingredientRemoved)="removeIngredient($event)"
+    (ordered)="purchase()"
+    [disabled]="burger.ingredients"
+    [purchasable]="burger.purchasable"
+    [price]="burger.totalPrice"
+  ></app-build-controls>
+</div>

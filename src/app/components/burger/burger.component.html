@@ -1,0 +1,8 @@
+<div class="burger">
+  <app-burger-ingredient type="bread-top"></app-burger-ingredient>
+  <div *ngIf="transformedIngredients().length <= 0">
+    <p>Please start adding ingredients!</p>
+  </div>
+  <app-burger-ingredient *ngFor="let ingredient of transformedIngredients()" [type]="ingredient"></app-burger-ingredient>
+  <app-burger-ingredient type="bread-bottom"></app-burger-ingredient>
+</div>
