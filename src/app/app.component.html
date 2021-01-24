@@ -1,6 +1,19 @@
 <div class="content">
-  
   <h1>{{ title }}</h1>
+  <div class="burguer-builder-area">
+    <app-ingredient type="bread-top">
+      <app-ingredient type="seeds-1"></app-ingredient>
+      <app-ingredient type="seeds-2"></app-ingredient>
+    </app-ingredient>
+    <app-ingredient type="cheese" subtype="cheddar"></app-ingredient>
+    <app-ingredient type="bacon"></app-ingredient>
+    <app-ingredient type="salad"></app-ingredient>
+    <app-ingredient type="meat" subtype="big"></app-ingredient>
+    <app-ingredient type="meat"></app-ingredient>
+    <app-ingredient type="bread-bottom"></app-ingredient>
+  </div>
+
+  <!-- como passamos o css para dentro do componente, esse item abaixo não vai mais funcionar -->
   <div class="burguer-builder-area">
     <div class="bread-top">
       <div class="seeds-1"></div>
