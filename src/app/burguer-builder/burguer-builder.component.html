@@ -1,0 +1,46 @@
+<div class="burguer-builder-area">
+  <div class="buttons">
+    <p>Choose the bread type</p>
+    <button (click)="changeBreadType('')">Normal</button>
+    <button (click)="changeBreadType('dark')">Dark</button>
+    <button (click)="changeBreadType('green')">Green</button>
+  </div>
+  <div class="buttons">
+    <p>Add the ingredients</p>
+    <button (click)="addIngredient('bacon')">+ Bacon</button>
+    <button (click)="addIngredient('salad')">+ Salad</button>
+    <button (click)="addIngredient('cheese')">+ Cheese</button>
+    <button (click)="addIngredient('meat')">+ Meat</button>
+  </div>
+
+  <app-ingredient type="bread-top" [subtype]="newBurguer.breadType">
+    <app-ingredient type="seeds-1"></app-ingredient>
+    <app-ingredient type="seeds-2"></app-ingredient>
+  </app-ingredient>
+
+  <app-ingredient
+    *ngFor="let ingredient of newBurguer.ingredients"
+    [type]="ingredient"
+  ></app-ingredient>
+
+  <app-ingredient
+    type="bread-bottom"
+    [subtype]="newBurguer.breadType"
+  ></app-ingredient>
+
+  <div class="info-area">
+    <p>Add the info</p>
+    <div class="field">
+      <label for="name" for="burguerName">Burguer name</label>
+      <input type="text" id="burguerName" [(ngModel)]="newBurguer.name" />
+    </div>
+    <div class="field">
+      <label for="name" for="burguerPrice">Burguer price</label>
+      <input type="number" id="burguerPrice" [(ngModel)]="newBurguer.price"/>
+    </div>
+    <div>
+      <button (click)="clear()">Clear</button>
+      <button class="save" (click)="save()">Save</button>
+    </div>
+  </div>
+</div>

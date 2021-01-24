@@ -17,6 +17,29 @@ body {
     height: 400px;
 }
 
+.burguer-builder-area .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ddd;
+  margin-bottom: 35px;
+}
+
+.burguer-builder-area .buttons button {
+  padding: 15px;
+  background-color: rgb(177, 177, 177);
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.burguer-builder-area .buttons button:hover {
+  padding: 15px;
+  color: white;
+  background-color: rgb(95, 94, 94);;
+}
+
+
 .logo {
   background-color: white;
   padding: 8px;
@@ -27,4 +50,47 @@ body {
 
 .logo img {
   height: 100%;
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-area .field {
+  font-size: 14px;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.info-area label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.info-area input {
+  font-size: 14px;
+  color: #aaa;
+  padding: 10px;
+}
+
+.info-area button {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #ccc;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.info-area button.save {
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: rgb(155, 185, 141);
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
 }

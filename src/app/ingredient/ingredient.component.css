@@ -18,8 +18,13 @@
 }
 
 .bread-bottom.dark {
-  background: linear-gradient(#615751, #8a7d74);
+    background: linear-gradient(#887b73, #ad9787);
   box-shadow: inset -15px 0 #5e4330;
+}
+
+.bread-bottom.green {
+  background: linear-gradient(#526151, #465a4a);
+  box-shadow: inset -15px 0 #1a3625;
 }
 
 .bread-top {
@@ -33,8 +38,13 @@
 }
 
 .bread-top.dark {
-  background: linear-gradient(#615751, #8a7d74);
+  background: linear-gradient(#887b73, #ad9787);
   box-shadow: inset -15px 0 #5e4330;
+}
+
+.bread-top.green {
+  background: linear-gradient(#526151, #465a4a);
+  box-shadow: inset -15px 0 #1a3625;
 }
 
 .seeds-1 {
