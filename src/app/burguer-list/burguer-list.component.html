@@ -1,0 +1,6 @@
+<div class="burguer-list">
+    <div class="item" *ngFor="let item of burguerService.burguers">
+        <p><strong>{{ item.name }}</strong></p>
+        <small>{{ item.price | currency }}</small>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BurguerService } from '../services/burguer.service';
 
 @Component({
   selector: 'app-burguer-builder',
@@ -14,7 +15,7 @@ export class BurguerBuilderComponent implements OnInit {
     price: 0
   };
 
-  constructor() { }
+  constructor(private burguerService: BurguerService) { }
 
   addIngredient(type: string): void {
     this.newBurguer.ingredients.push(type);
@@ -34,7 +35,9 @@ export class BurguerBuilderComponent implements OnInit {
   }
 
   save() {
-    console.log(this.newBurguer)
+    this.burguerService.addBurguer(this.newBurguer);
+    alert('Burguer added to menu');
+    this.clear();
   }
 
   ngOnInit(): void {
