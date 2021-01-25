@@ -4,24 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Run `npm install`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Run json-server to serve as backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Run `npm i -g json-server`
 
-## Build
+2. Create a file db/db.json
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3. Add the content:
+`{ "burguers": [] }`
 
-## Running unit tests
+4. Run `json-server --watch db/db.json`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. The endpoint to access burguers (GET, POST, PUT, DELETE, etc) is `http://localhost:3000/burguers`
