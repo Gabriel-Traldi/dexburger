@@ -3,4 +3,5 @@
         <p><strong>{{ item.name }}</strong></p>
         <small>{{ item.price | currency }}</small>
     </div>
+    <p *ngIf="burguerService.burguers.length === 0">No burguers in the menu</p>
 </div>

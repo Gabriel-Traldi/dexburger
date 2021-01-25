@@ -5,11 +5,27 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+nav {
+  padding: 10px;
+  background-color: rgb(245, 137, 66);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
 }
 
 .burguer-builder-area {
@@ -18,6 +34,9 @@ body {
 
 .burguer-builder-area-draw {
   height: 400px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  overflow: auto;
 }
 
 .burguer-builder-area .buttons {
