@@ -1,0 +1,26 @@
+{
+  "burguers": [
+    {
+      "id": 1,
+      "breadType": "",
+      "ingredients": [
+        "bacon",
+        "cheese",
+        "meat"
+      ],
+      "name": "X-Bacon",
+      "price": 10
+    },
+    {
+      "breadType": "green",
+      "ingredients": [
+        "salad",
+        "cheese",
+        "meat"
+      ],
+      "name": "Burguer name 1",
+      "price": 12,
+      "id": 1611540831913
+    }
+  ]
+}

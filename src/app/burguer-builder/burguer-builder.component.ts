@@ -35,6 +35,7 @@ export class BurguerBuilderComponent implements OnInit {
   }
 
   save() {
+    this.newBurguer['id'] = +new Date;
     this.burguerService.addBurguer(this.newBurguer);
     alert('Burguer added to menu');
     this.clear();

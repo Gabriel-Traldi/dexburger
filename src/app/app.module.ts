@@ -8,6 +8,7 @@ import { BurguerBuilderComponent } from './burguer-builder/burguer-builder.compo
 import { FormsModule } from '@angular/forms';
 import { BurguerService } from './services/burguer.service';
 import { BurguerListComponent } from './burguer-list/burguer-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BurguerListComponent } from './burguer-list/burguer-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [BurguerService],
   bootstrap: [AppComponent]
